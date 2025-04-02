@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <div class="text-center mb-6">
+            <i class="fas fa-trophy text-5xl text-yellow-500 mb-4"></i>
+            <h1 class="text-3xl font-bold text-green-600">Quiz Completed!</h1>
+        </div>
+        <div class="text-center mb-6">
+            <p class="text-xl mb-2">Your Score: <span id="score" class="font-bold"></span>/5</p>
+            <p class="text-gray-600 mb-4"><span id="percentage" class="font-bold"></span>% Correct</p>
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div id="score-bar" class="bg-green-600 h-2.5 rounded-full"></div>
+            </div>
+        </div>
+        <button onclick="window.location='index.html'" 
+                class="w-full bg-blue-600 text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-200">
+            <i class="fas fa-redo mr-2"></i>Take Quiz Again
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
